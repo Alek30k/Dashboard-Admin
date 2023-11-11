@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/dashboard/layout"],{
+self["webpackHotUpdate_N_E"]("app/dashboard/layout",{
 
 /***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Fui%2Fdashboard%2Fdashboard.module.css&server=false!":
 /*!******************************************************************************************************************************************************************************************************************!*\
@@ -38,11 +38,4 @@ eval(__webpack_require__.ts("var __dirname = \"/\";\n(()=>{\"use strict\";var e=
 
 /***/ })
 
-},
-/******/ function(__webpack_require__) { // webpackRuntimeModules
-/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Fui%2Fdashboard%2Fdashboard.module.css&server=false!"); });
-/******/ var __webpack_exports__ = __webpack_require__.O();
-/******/ _N_E = __webpack_exports__;
-/******/ }
-]);
+});
