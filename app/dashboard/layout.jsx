@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../ui/dashboard/sidebar/sidebar";
 import Navbar from "../ui/dashboard/navbar/navbar";
 
-const layout = ({ chlidren }) => {
+const layout = ({ children }) => {
   return (
     <div>
       <div>
@@ -10,6 +10,7 @@ const layout = ({ chlidren }) => {
       </div>
       <div>
         <Navbar />
+        {children}
       </div>
     </div>
   );
