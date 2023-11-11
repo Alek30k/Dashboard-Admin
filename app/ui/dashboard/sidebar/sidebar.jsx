@@ -12,6 +12,7 @@ import {
   MdHelpCenter,
   MdLogout,
 } from "react-icons/md";
+import MenuLink from "./menuLinks/menuLinks";
 
 const Sidebar = () => {
   const menuItems = [
@@ -80,8 +81,8 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <ul>
-        {menuItems.map((cat) => (
-          <li key={cat}>{cat.title}</li>
+        {cat.list.map((item) => (
+          <MenuLink item={item} key={item.title} />
         ))}
       </ul>
     </div>
