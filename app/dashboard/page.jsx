@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "../ui/dashboard/card/card";
 import styles from "../ui/dashboard/card/card.module.css";
+import Rightbar from "../ui/dashboard/rightbar/rightbar";
+import Transactions from "../ui/dashboard/transactions/transactions";
+import Chart from "../ui/dashboard/chart/chart";
 
 const Dashboard = () => {
   return (
@@ -8,6 +11,13 @@ const Dashboard = () => {
       <div className={styles.main}>
         <div className={styles.cards}>
           <Card />
+          <Card />
+          <Card />
+        </div>
+        <Transactions />
+        <Chart />
+        <div className={styles.side}>
+          <Rightbar />
         </div>
       </div>
     </div>
