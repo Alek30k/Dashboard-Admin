@@ -83,3 +83,21 @@
   outline: none;
 }
 
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/ui/dashboard/pagination/pagination.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.pagination_container__MlbTl {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination_button__63zCc {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination_button__63zCc:disabled {
+  cursor: not-allowed;
+}
+
