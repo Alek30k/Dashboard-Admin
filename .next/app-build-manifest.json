@@ -27,6 +27,7 @@
     "/dashboard/users/add/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/dashboard/users/add/page.css",
       "static/chunks/app/dashboard/users/add/page.js"
     ],
     "/dashboard/products/add/page": [
