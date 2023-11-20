@@ -37,6 +37,7 @@ const SingleProductPage = async ({ params }) => {
             name="size"
             placeholder={"product.size" || "size"}
           />
+
           <label>Cat</label>
           <select name="cat" id="cat">
             <option value="kitchen">Kitchen</option>
