@@ -2,6 +2,9 @@ import mongoose from "mongoose";
 
 const connection = {};
 
+const con = process.env.MONGO;
+console.log(con);
+
 export const connectToDB = async () => {
   try {
     if (connection.isConnected) return;
