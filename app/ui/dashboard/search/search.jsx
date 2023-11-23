@@ -18,6 +18,8 @@ const Search = ({ placeholder }) => {
 
   replace(`${pathname}?${params}`);
 
+  const handleSearch = (e) => {};
+
   return (
     <div className={styles.container}>
       <MdSearch />
@@ -25,7 +27,7 @@ const Search = ({ placeholder }) => {
         type="text"
         placeholder={placeholder}
         className={styles.input}
-        // onChange={handleSearch}
+        onChange={handleSearch}
       />
     </div>
   );
