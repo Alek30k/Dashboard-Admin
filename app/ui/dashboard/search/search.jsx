@@ -12,13 +12,19 @@ const Search = ({ placeholder }) => {
   const { replace } = useRouter();
   const pathname = usePathname();
 
-  const params = new URLSearchParams(searchParams);
+  const handleSearch = (e) => {
+    const params = new URLSearchParams(searchParams);
 
-  params.set("test", "value");
+    // params.set("q", e.target.value);
 
-  replace(`${pathname}?${params}`);
+    if (e.target.value) {
+      e.target.value.length > 2 && params.set("q", e.target.value);
+    } else {
+      params.delete("q");
+    }
 
-  const handleSearch = (e) => {};
+    replace(`${pathname}?${params}`);
+  };
 
   return (
     <div className={styles.container}>
