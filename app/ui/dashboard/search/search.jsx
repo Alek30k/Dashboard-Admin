@@ -4,6 +4,7 @@ import React from "react";
 import { MdSearch } from "react-icons/md";
 import styles from "./search.module.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { useDebouncedCallback } from "use-debounce";
 
 // const handleSearch = useDebouncedCallback((e) => {}, 300);
 
@@ -12,7 +13,7 @@ const Search = ({ placeholder }) => {
   const { replace } = useRouter();
   const pathname = usePathname();
 
-  const handleSearch = (e) => {
+  const handleSearch = useDebouncedCallback((e) => {
     const params = new URLSearchParams(searchParams);
 
     // params.set("q", e.target.value);
@@ -24,7 +25,7 @@ const Search = ({ placeholder }) => {
     }
 
     replace(`${pathname}?${params}`);
-  };
+  }, 300);
 
   return (
     <div className={styles.container}>
