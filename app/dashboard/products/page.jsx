@@ -4,12 +4,12 @@ import Link from "next/link";
 import React from "react";
 import styles from "@/app/ui/dashboard/products/products.module.css";
 import Search from "@/app/ui/dashboard/search/search";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { fetchProducts, fetchUsers } from "@/app/lib/data";
 
-const ProductsPage = async () => {
-  const searchParams = useSearchParams();
-  const { replace } = useRouter();
-  const pathname = usePathname();
+const ProductsPage = async ({ searchParams }) => {
+  const q = searchParams?.q || "";
+  const page = searchParams?.page || 1;
+  const { products, count } = await fetchProducts(q, page);
 
   return (
     <div className={styles.container}>
@@ -27,40 +27,42 @@ const ProductsPage = async () => {
             <td>Price</td>
             <td>Created At</td>
             <td>Stock</td>
-            <tds>Action</tds>
+            <td>Action</td>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <div className={styles.product}>
-                <Image
-                  src="/noproduct.jpg"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className={styles.userImage}
-                />
-                Iphone
-              </div>
-            </td>
-            <td>John@gmail.com</td>
-            <td>15.11.2023</td>
-            <td>Admin</td>
-            <td>Active</td>
-            <td>
-              <div className={styles.buttons}>
-                <Link href="/dashboard/products/test">
-                  <button className={`${styles.button} ${styles.view}`}>
-                    View
+          {products.map((product) => (
+            <tr key={product._id}>
+              <td>
+                <div className={styles.product}>
+                  <Image
+                    src={product.img || "/noproduct.jpg"}
+                    alt=""
+                    width={40}
+                    height={40}
+                    className={styles.productImage}
+                  />
+                  {product.title}
+                </div>
+              </td>
+              <td>{product.desc}</td>
+              <td>{product.price}</td>
+              <td>{product.createdAt.toString().splice(4, 16)}</td>
+              <td>{product.stock}</td>
+              <td>
+                <div className={styles.buttons}>
+                  <Link href={`dashboard/products/${product._id}`}>
+                    <button className={`${styles.button} ${styles.view}`}>
+                      View
+                    </button>
+                  </Link>
+                  <button className={`${styles.button} ${styles.delete}`}>
+                    Delete
                   </button>
-                </Link>
-                <button className={`${styles.button} ${styles.delete}`}>
-                  Delete
-                </button>
-              </div>
-            </td>
-          </tr>
+                </div>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
       <Pagination />
