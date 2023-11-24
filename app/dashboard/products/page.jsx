@@ -47,7 +47,7 @@ const ProductsPage = async ({ searchParams }) => {
               </td>
               <td>{product.desc}</td>
               <td>{product.price}</td>
-              <td>{product.createdAt.toString().splice(4, 16)}</td>
+              <td>{product.createdAt?.toString().splice(4, 16)}</td>
               <td>{product.stock}</td>
               <td>
                 <div className={styles.buttons}>
@@ -65,7 +65,7 @@ const ProductsPage = async ({ searchParams }) => {
           ))}
         </tbody>
       </table>
-      <Pagination />
+      <Pagination count={count} />
     </div>
   );
 };
