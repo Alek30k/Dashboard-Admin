@@ -1,13 +1,12 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { User } from "./models";
+import { Product, User } from "./models";
 import { connectToDB } from "./utils";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt";
 
 export const addUser = async (formData) => {
-  "use server";
   const { username, email, password, phone, address, isAdmin, isActive } =
     Object.fromEntries(formData);
 
@@ -38,14 +37,13 @@ export const addUser = async (formData) => {
 };
 
 export const addProduct = async (formData) => {
-  "use server";
   const { title, desc, price, stock, color, size } =
     Object.fromEntries(formData);
 
   try {
     connectToDB();
 
-    const newProduct = new User({
+    const newProduct = new Product({
       title,
       desc,
       price,
