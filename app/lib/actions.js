@@ -76,6 +76,7 @@ export const deleteProduct = async (formData) => {
 
   revalidatePath("/dashboard/products");
 };
+
 export const deleteUser = async (formData) => {
   const { id } = Object.fromEntries(formData);
 
