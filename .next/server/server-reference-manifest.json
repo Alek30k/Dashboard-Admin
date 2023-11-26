@@ -10,7 +10,15 @@
     },
     "a770c4ee523d00b7f37ee58c2c45da4a005e5008": {
       "workers": {
-        "app/dashboard/users/add/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/users/add/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22addUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/dashboard/users/add/page": "rsc"
+      }
+    },
+    "bdec2473f6d9960e3fa8757971aadb6ff30c01ea": {
+      "workers": {
+        "app/dashboard/users/add/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22addUser%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/dashboard/users/add/page": "rsc"
