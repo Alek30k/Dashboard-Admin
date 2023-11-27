@@ -5,6 +5,7 @@ import { Product, User } from "./models";
 import { connectToDB } from "./utils";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt";
+// import { signIn } from "../auth";
 
 export const addUser = async (formData) => {
   const { username, email, password, phone, address, isAdmin, isActive } =
@@ -27,9 +28,9 @@ export const addUser = async (formData) => {
     });
 
     await newUser.save();
-  } catch (error) {
-    console.log(error);
-    throw new Error("Failed to add user!");
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to create user!");
   }
 
   revalidatePath("/dashboard/users");
@@ -59,8 +60,8 @@ export const updateUser = async (formData) => {
     );
 
     await User.findByIdAndUpdate(id, updateFields);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
     throw new Error("Failed to update user!");
   }
 
@@ -85,28 +86,44 @@ export const addProduct = async (formData) => {
     });
 
     await newProduct.save();
-  } catch (error) {
-    console.log(error);
-    throw new Error("Failed to add Product!");
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to create product!");
   }
 
   revalidatePath("/dashboard/products");
   redirect("/dashboard/products");
 };
 
-export const deleteProduct = async (formData) => {
-  const { id } = Object.fromEntries(formData);
+export const updateProduct = async (formData) => {
+  const { id, title, desc, price, stock, color, size } =
+    Object.fromEntries(formData);
 
   try {
     connectToDB();
 
-    await Product.findByIdAndDelete(id);
-  } catch (error) {
-    console.log(error);
-    throw new Error("Failed to delete Product!");
+    const updateFields = {
+      title,
+      desc,
+      price,
+      stock,
+      color,
+      size,
+    };
+
+    Object.keys(updateFields).forEach(
+      (key) =>
+        (updateFields[key] === "" || undefined) && delete updateFields[key]
+    );
+
+    await Product.findByIdAndUpdate(id, updateFields);
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to update product!");
   }
 
   revalidatePath("/dashboard/products");
+  redirect("/dashboard/products");
 };
 
 export const deleteUser = async (formData) => {
@@ -114,12 +131,35 @@ export const deleteUser = async (formData) => {
 
   try {
     connectToDB();
-
     await User.findByIdAndDelete(id);
-  } catch (error) {
-    console.log(error);
-    throw new Error("Failed to delete User!");
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to delete user!");
   }
 
-  revalidatePath("/dashboard/users");
+  revalidatePath("/dashboard/products");
 };
+
+export const deleteProduct = async (formData) => {
+  const { id } = Object.fromEntries(formData);
+
+  try {
+    connectToDB();
+    await Product.findByIdAndDelete(id);
+  } catch (err) {
+    console.log(err);
+    throw new Error("Failed to delete product!");
+  }
+
+  revalidatePath("/dashboard/products");
+};
+
+// export const authenticate = async (prevState, formData) => {
+//   const { username, password } = Object.fromEntries(formData);
+
+//   try {
+//     await signIn("credentials", { username, password });
+//   } catch (err) {
+//     return "Wrong Credentials!";
+//   }
+// };

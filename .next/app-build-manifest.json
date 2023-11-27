@@ -6,11 +6,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -23,35 +18,22 @@
       "static/css/app/dashboard/layout.css",
       "static/chunks/app/dashboard/layout.js"
     ],
-    "/dashboard/users/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/dashboard/users/page.css",
-      "static/chunks/app/dashboard/users/page.js"
-    ],
-    "/dashboard/users/add/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/dashboard/users/add/page.css",
-      "static/chunks/app/dashboard/users/add/page.js"
-    ],
     "/dashboard/products/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/dashboard/products/page.css",
       "static/chunks/app/dashboard/products/page.js"
     ],
-    "/dashboard/products/add/page": [
+    "/dashboard/products/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/dashboard/products/add/page.css",
-      "static/chunks/app/dashboard/products/add/page.js"
+      "static/css/app/dashboard/products/[id]/page.css",
+      "static/chunks/app/dashboard/products/[id]/page.js"
     ],
-    "/dashboard/users/[id]/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/dashboard/users/[id]/page.css",
-      "static/chunks/app/dashboard/users/[id]/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

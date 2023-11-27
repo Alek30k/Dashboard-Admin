@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "@/app/ui/dashboard/products/products.module.css";
 import Search from "@/app/ui/dashboard/search/search";
-import { fetchProducts, fetchUsers } from "@/app/lib/data";
+import { fetchProducts } from "@/app/lib/data";
 import { deleteProduct } from "@/app/lib/actions";
 
 const ProductsPage = async ({ searchParams }) => {
@@ -52,7 +52,7 @@ const ProductsPage = async ({ searchParams }) => {
               <td>{product.stock}</td>
               <td>
                 <div className={styles.buttons}>
-                  <Link href={`dashboard/products/${product._id}`}>
+                  <Link href={`/dashboard/products/${product.id}`}>
                     <button className={`${styles.button} ${styles.view}`}>
                       View
                     </button>
