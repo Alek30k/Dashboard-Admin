@@ -17,7 +17,7 @@ import Image from "next/image";
 import { auth, signOut } from "@/app/auth";
 
 const Sidebar = async () => {
-  const session = await auth();
+  const { user } = await auth();
 
   const menuItems = [
     {
@@ -87,13 +87,12 @@ const Sidebar = async () => {
       <div className={styles.user}>
         <Image
           className={styles.userImage}
-          src="/noavatar.png"
-          alt=""
+          src={user.img || "/noavatar.png"}
           width="50"
           height="50"
         />
         <div className={styles.userDetail}>
-          <span className={styles.username}>John Joe</span>
+          <span className={styles.username}>{user.username}</span>
           <span className={styles.userTitle}>Administrator</span>
         </div>
       </div>
