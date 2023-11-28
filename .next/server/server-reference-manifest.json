@@ -1,76 +1,14 @@
 {
   "node": {
-    "a770c4ee523d00b7f37ee58c2c45da4a005e5008": {
+    "b29ca96bd638c2073799041c70ff9e580a36716b": {
       "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Fui%2Fdashboard%2Fsidebar%2Fsidebar.jsx%22%2C%5B%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "daaa1717e44c525a7fdd6072a5d8f7e4d15e1118": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "9cc517c24fb70caccd69d0cb6533de25d0c42e15": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "bdec2473f6d9960e3fa8757971aadb6ff30c01ea": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "7b185f841f86d3c5ff39fd236c0d646b1433d73c": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "16070521b5a5e82f9cc928801cf44c9b43e5e18f": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
-      }
-    },
-    "19b2b473de8eff201504c4fa376e8323f5c17e1b": {
-      "workers": {
-        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22addProduct%22%2C%22updateProduct%22%2C%22deleteUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fale%2Fdiskold%2Frepos%2Fdashboardadminnext%2Fapp%2Flib%2Factions.js%22%2C%5B%22addProduct%22%2C%22deleteUser%22%2C%22deleteProduct%22%2C%22authenticate%22%2C%22updateProduct%22%2C%22addUser%22%2C%22updateUser%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/login/page": "action-browser",
-        "app/dashboard/users/page": "rsc"
+        "app/dashboard/page": "rsc"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "Iug29Dbg0RHTCBORhfO6L+fqI7pArxX93moB7FmARK0="
+  "encryptionKey": "xilXQ1XngLscJxneqxD4RuuBqErpCPAZt046jnwIHGY="
 }
